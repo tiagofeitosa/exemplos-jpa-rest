@@ -1,0 +1,15 @@
+POST http://localhost:8080/pessoa
+BODY
+{
+	"nome":"tiago",
+	"telefone":[]
+}
+
+POST http://localhost:8080/telefone
+BODY
+{
+	"telefone":"12345678",
+	"pessoa":{
+		"id":"1"
+	}
+}
